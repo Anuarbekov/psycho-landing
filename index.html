@@ -1,0 +1,673 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta title="Psycho.kz" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blackblue: "#191C30E5",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="flex w-full flex-row items-center justify-between rounded-xl px-[120px] py-3 shadow-[0px_4px_24px_0px_rgba(0,0,0,0.12)]"
+    >
+      <div class="text-blackblue text-[28px] font-extrabold">psycho.kz</div>
+      <div class="flex flex-row gap-[24px]">
+        <h3 class="text-[17px] font-extrabold">О нас</h3>
+        <h3 class="text-[17px] font-extrabold">Специалисты</h3>
+        <h3 class="text-[17px] font-extrabold">Семинары</h3>
+        <h3 class="text-[17px] font-extrabold">Курсы</h3>
+        <h3 class="text-[17px] font-extrabold">FAQ</h3>
+        <h3 class="text-[17px] font-extrabold">Контакты</h3>
+      </div>
+      <div>
+        <button
+          class="flex gap-2.5 rounded-xl bg-[#FF7043] p-4 text-[15px] font-extrabold text-white"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 1C12 0.447715 12.4477 0 13 0H17C17.7957 0 18.5587 0.31607 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V17C20 17.7957 19.6839 18.5587 19.1213 19.1213C18.5587 19.6839 17.7957 20 17 20H13C12.4477 20 12 19.5523 12 19C12 18.4477 12.4477 18 13 18H17C17.2652 18 17.5196 17.8946 17.7071 17.7071C17.8946 17.5196 18 17.2652 18 17V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2H13C12.4477 2 12 1.55228 12 1ZM7.29289 4.29289C7.68342 3.90237 8.31658 3.90237 8.70711 4.29289L13.7071 9.29289C14.0976 9.68342 14.0976 10.3166 13.7071 10.7071L8.70711 15.7071C8.31658 16.0976 7.68342 16.0976 7.29289 15.7071C6.90237 15.3166 6.90237 14.6834 7.29289 14.2929L10.5858 11H1C0.447715 11 0 10.5523 0 10C0 9.44771 0.447715 9 1 9H10.5858L7.29289 5.70711C6.90237 5.31658 6.90237 4.68342 7.29289 4.29289Z"
+              fill="white"
+            />
+          </svg>
+
+          Войти
+        </button>
+      </div>
+    </nav>
+    <section class="relative mt-6 text-white">
+      <img
+        src="./assets/man-sitting.jpeg"
+        alt="Man"
+        class="mx-auto h-[600px] w-[1200px] rounded-[40px] object-cover brightness-[40%]"
+      />
+      <div class="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4">
+        <h3 class="w-[972px] pb-2 text-[50px] font-extrabold">
+          Онлайн-сервис подбора и записи к психологам
+        </h3>
+        <h5 class="text-[17px] font-medium">Описание баннера</h5>
+      </div>
+    </section>
+    <div
+      class="mx-auto mt-6 flex h-[248px] max-w-[1200px] flex-row items-center justify-between gap-6 rounded-t-[40px] bg-[#FEE797] px-[120px]"
+    >
+      <div>
+        <h1 class="text-blackblue text-[50px] font-extrabold">45+</h1>
+        <h6 class="text-blackblue text-[20px] font-extrabold">специалистов</h6>
+      </div>
+      <div>
+        <h1 class="text-blackblue text-[50px] font-extrabold">20+</h1>
+        <h6 class="text-blackblue text-[20px] font-extrabold">курсов</h6>
+      </div>
+      <div>
+        <h1 class="text-blackblue text-[50px] font-extrabold">34+</h1>
+        <h6 class="text-blackblue text-[20px] font-extrabold">семинаров</h6>
+      </div>
+      <div>
+        <h1 class="text-blackblue text-[50px] font-extrabold">1000+</h1>
+        <h6 class="text-blackblue text-[20px] font-extrabold">терапий</h6>
+      </div>
+    </div>
+
+    <div
+      class="mx-auto flex h-[968px] w-[1408px] flex-col items-center rounded-[40px] bg-[#E1FFB1]"
+    >
+      <div class="rounded-lg">
+        <h1
+          class="text-blackblue mx-auto w-3/4 py-20 text-center text-[50px] font-extrabold"
+        >
+          Онлайн-сервис подбора и записи к психологам
+        </h1>
+        <div class="grid-lines mx-auto grid h-[576px] w-[824px] grid-cols-2">
+          <div
+            class="group h-[264px] w-[364px] rounded-3xl p-6 duration-300 hover:bg-[#00000014]"
+          >
+            <div
+              class="flex w-full justify-end pb-12 opacity-0 group-hover:opacity-100"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.25253 33.5859C4.47149 34.3669 4.47149 35.6333 5.25253 36.4143C6.03358 37.1954 7.29991 37.1954 8.08096 36.4143L5.25253 33.5859ZM36.951 6.71582C36.951 5.61125 36.0556 4.71582 34.951 4.71582H16.951C15.8464 4.71582 14.951 5.61125 14.951 6.71582C14.951 7.82039 15.8464 8.71582 16.951 8.71582H32.951V24.7158C32.951 25.8204 33.8464 26.7158 34.951 26.7158C36.0556 26.7158 36.951 25.8204 36.951 24.7158V6.71582ZM8.08096 36.4143L36.3652 8.13003L33.5368 5.30161L5.25253 33.5859L8.08096 36.4143Z"
+                  fill="#ED5A2B"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-[28px] font-extrabold">Семинары</h2>
+              <p class="text-[15px] font-medium text-[#1b1f3b66]">
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group ml-10 h-[264px] w-[364px] rounded-3xl p-6 duration-300 hover:bg-[#00000014]"
+          >
+            <div
+              class="flex w-full justify-end pb-12 opacity-0 group-hover:opacity-100"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.25253 33.5859C4.47149 34.3669 4.47149 35.6333 5.25253 36.4143C6.03358 37.1954 7.29991 37.1954 8.08096 36.4143L5.25253 33.5859ZM36.951 6.71582C36.951 5.61125 36.0556 4.71582 34.951 4.71582H16.951C15.8464 4.71582 14.951 5.61125 14.951 6.71582C14.951 7.82039 15.8464 8.71582 16.951 8.71582H32.951V24.7158C32.951 25.8204 33.8464 26.7158 34.951 26.7158C36.0556 26.7158 36.951 25.8204 36.951 24.7158V6.71582ZM8.08096 36.4143L36.3652 8.13003L33.5368 5.30161L5.25253 33.5859L8.08096 36.4143Z"
+                  fill="#ED5A2B"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-[28px] font-extrabold">Специалисты</h2>
+              <p class="text-[15px] font-medium text-[#1b1f3b66]">
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group mt-10 h-[264px] w-[364px] rounded-3xl p-6 duration-300 hover:bg-[#00000014]"
+          >
+            <div
+              class="flex w-full justify-end pb-12 opacity-0 group-hover:opacity-100"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.25253 33.5859C4.47149 34.3669 4.47149 35.6333 5.25253 36.4143C6.03358 37.1954 7.29991 37.1954 8.08096 36.4143L5.25253 33.5859ZM36.951 6.71582C36.951 5.61125 36.0556 4.71582 34.951 4.71582H16.951C15.8464 4.71582 14.951 5.61125 14.951 6.71582C14.951 7.82039 15.8464 8.71582 16.951 8.71582H32.951V24.7158C32.951 25.8204 33.8464 26.7158 34.951 26.7158C36.0556 26.7158 36.951 25.8204 36.951 24.7158V6.71582ZM8.08096 36.4143L36.3652 8.13003L33.5368 5.30161L5.25253 33.5859L8.08096 36.4143Z"
+                  fill="#ED5A2B"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-[28px] font-extrabold">Личный кабинет</h2>
+              <p class="text-[15px] font-medium text-[#1b1f3b66]">
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group ml-10 mt-10 h-[264px] w-[364px] rounded-3xl p-6 duration-300 hover:bg-[#00000014]"
+          >
+            <div
+              class="flex w-full justify-end pb-12 opacity-0 group-hover:opacity-100"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.25253 33.5859C4.47149 34.3669 4.47149 35.6333 5.25253 36.4143C6.03358 37.1954 7.29991 37.1954 8.08096 36.4143L5.25253 33.5859ZM36.951 6.71582C36.951 5.61125 36.0556 4.71582 34.951 4.71582H16.951C15.8464 4.71582 14.951 5.61125 14.951 6.71582C14.951 7.82039 15.8464 8.71582 16.951 8.71582H32.951V24.7158C32.951 25.8204 33.8464 26.7158 34.951 26.7158C36.0556 26.7158 36.951 25.8204 36.951 24.7158V6.71582ZM8.08096 36.4143L36.3652 8.13003L33.5368 5.30161L5.25253 33.5859L8.08096 36.4143Z"
+                  fill="#ED5A2B"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2 class="text-[28px] font-extrabold">Курсы</h2>
+              <p class="text-[15px] font-medium text-[#1b1f3b66]">
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </p>
+            </div>
+          </div>
+          <div class="grid-dot dot-top-center"></div>
+          <div class="grid-dot dot-right-center"></div>
+          <div class="grid-dot dot-bottom-center"></div>
+          <div class="grid-dot dot-left-center"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mx-auto flex h-[248px] w-[1200px] flex-row items-center justify-between gap-6 rounded-b-[40px] bg-[#FEE797] px-[120px]"
+    >
+      <div class="flex w-[490px] flex-col">
+        <h3 class="text-blackblue pb-2 text-[28px] font-extrabold">
+          Получи первую сессию бесплатно
+        </h3>
+        <h3 class="text-[17px] font-medium text-[#1b1f3b66]">
+          Групповые занятия, кружок для какой-н. специальной подготовки, для
+          повышения квалификации.
+        </h3>
+      </div>
+      <button
+        class="flex w-[265px] items-center justify-center gap-2 rounded-xl bg-[#ff7043] py-4 font-medium text-white"
+      >
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.5 4C13.0523 4 13.5 4.44772 13.5 5V11H19.5C20.0523 11 20.5 11.4477 20.5 12C20.5 12.5523 20.0523 13 19.5 13H13.5V19C13.5 19.5523 13.0523 20 12.5 20C11.9477 20 11.5 19.5523 11.5 19V13H5.5C4.94772 13 4.5 12.5523 4.5 12C4.5 11.4477 4.94772 11 5.5 11H11.5V5C11.5 4.44772 11.9477 4 12.5 4Z"
+            fill="white"
+          />
+        </svg>
+        Записаться бесплатно
+      </button>
+    </div>
+    <div
+      class="mx-auto flex w-[1200px] flex-row items-center justify-center gap-6 pb-4 pt-24"
+    >
+      <svg
+        width="149"
+        class=""
+        height="51"
+        viewBox="0 0 149 51"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.489318 23.1263C0.450755 23.6773 0.866117 24.1551 1.41705 24.1937L10.3951 24.8221C10.946 24.8607 11.4239 24.4453 11.4625 23.8944C11.501 23.3434 11.0857 22.8656 10.5347 22.827L2.55426 22.2684L3.11285 14.2879C3.15142 13.737 2.73605 13.2591 2.18512 13.2206C1.63418 13.182 1.1563 13.5973 1.11773 14.1483L0.489318 23.1263ZM147.54 40.587C147.066 39.7067 147.066 39.7066 147.066 39.7067C147.066 39.7068 147.065 39.707 147.065 39.7073C147.064 39.7079 147.062 39.7089 147.059 39.7104C147.054 39.7133 147.045 39.7179 147.033 39.7242C147.009 39.7367 146.973 39.7558 146.925 39.7811C146.828 39.8317 146.682 39.907 146.489 40.0039C146.105 40.1976 145.534 40.4775 144.8 40.8183C143.331 41.5001 141.207 42.4246 138.597 43.3901C133.372 45.3231 126.229 47.4091 118.515 48.0528C110.801 48.6966 102.572 47.8935 95.121 44.1078C87.6902 40.3324 80.9415 33.5448 76.2423 22.0475L74.391 22.8042C79.252 34.6974 86.3115 41.8753 94.2151 45.8908C102.098 49.8961 110.73 50.7095 118.682 50.0459C126.634 49.3822 133.962 47.2371 139.291 45.2658C141.958 44.2791 144.132 43.3331 145.642 42.6325C146.397 42.2821 146.986 41.9928 147.389 41.7902C147.59 41.6888 147.745 41.6092 147.85 41.5543C147.902 41.5269 147.943 41.5056 147.97 41.491C147.984 41.4837 147.995 41.478 148.002 41.4741C148.006 41.4721 148.009 41.4705 148.011 41.4694C148.012 41.4688 148.013 41.4683 148.013 41.468C148.014 41.4676 148.015 41.4673 147.54 40.587ZM76.2423 22.0475C71.3669 10.1192 64.1478 4.06189 55.9761 1.84524C47.8679 -0.354168 39.0028 1.27826 30.8797 4.33199C22.7415 7.39139 15.2309 11.9216 9.7679 15.6728C7.03295 17.5508 4.80337 19.2389 3.25588 20.459C2.48199 21.0691 1.87829 21.5625 1.46684 21.9044C1.2611 22.0754 1.1034 22.2085 0.996497 22.2994C0.943043 22.3449 0.902284 22.3798 0.874566 22.4037C0.860706 22.4156 0.850106 22.4247 0.84281 22.431C0.839161 22.4342 0.836338 22.4366 0.834346 22.4384C0.833351 22.4392 0.832481 22.44 0.831983 22.4404C0.831322 22.441 0.830869 22.4414 1.48688 23.1961C2.14289 23.9509 2.14285 23.9509 2.14302 23.9508C2.14336 23.9505 2.14374 23.9502 2.14441 23.9496C2.14574 23.9484 2.14791 23.9465 2.15089 23.944C2.15687 23.9388 2.16613 23.9308 2.17864 23.92C2.20366 23.8985 2.24166 23.866 2.29231 23.8229C2.3936 23.7367 2.54544 23.6085 2.74507 23.4426C3.14437 23.1108 3.73473 22.6283 4.49414 22.0296C6.01325 20.8319 8.20721 19.1706 10.9 17.3215C16.2925 13.6187 23.6542 9.18492 31.5834 6.20408C39.5277 3.21758 47.925 1.7336 55.4525 3.77549C62.9164 5.80014 69.7061 11.3419 74.391 22.8042L76.2423 22.0475Z"
+          fill="#E38163"
+        />
+      </svg>
+      <h3 class="text-[17px] font-medium text-[#1b1f3ba6]">
+        Первая запись бесплатна!
+      </h3>
+    </div>
+    <div class="mx-auto flex w-[1200px] flex-row justify-between pb-10">
+      <div class="flex flex-row">
+        <div class="flex flex-col gap-4">
+          <div class="relative">
+            <img
+              src="./assets/marat.jpeg"
+              alt="Marat"
+              class="h-[360px] w-[360px] rounded-lg object-cover brightness-[80%]"
+            />
+            <div class="absolute bottom-2 left-2 rounded px-2 py-1 text-white">
+              <p class="text-2xl font-extrabold">Марат</p>
+              <p class="text-[17px] font-extrabold">
+                Опыт 4 года · от 14 000 тенге
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-row gap-4">
+            <div class="flex flex-col gap-4">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.486877"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  fill="#FF7043"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.4869 13C18.4116 13 13.4869 17.9247 13.4869 24C13.4869 30.0753 18.4116 35 24.4869 35C30.5622 35 35.4869 30.0753 35.4869 24C35.4869 17.9247 30.5622 13 24.4869 13ZM15.4869 24C15.4869 19.0293 19.5162 15 24.4869 15C29.4576 15 33.4869 19.0293 33.4869 24C33.4869 28.9707 29.4576 33 24.4869 33C19.5162 33 15.4869 28.9707 15.4869 24ZM25.4869 18C25.4869 17.4477 25.0392 17 24.4869 17C23.9346 17 23.4869 17.4477 23.4869 18V24C23.4869 24.3788 23.7009 24.725 24.0397 24.8944L28.0397 26.8944C28.5336 27.1414 29.1343 26.9412 29.3813 26.4472C29.6283 25.9532 29.4281 25.3526 28.9341 25.1056L25.4869 23.382V18Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                class="ml-4"
+                width="45"
+                height="150"
+                viewBox="0 0 45 150"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.4866 75.0012L25.0315 74.1108L25.4866 75.0012ZM18.4722 0.500107C17.9199 0.508188 17.4788 0.962407 17.4869 1.51463L17.6186 10.5137C17.6267 11.0659 18.0809 11.507 18.6331 11.4989C19.1854 11.4908 19.6265 11.0366 19.6184 10.4844L19.5013 2.48526L27.5005 2.3682C28.0527 2.36012 28.4938 1.9059 28.4857 1.35368C28.4777 0.801449 28.0234 0.360333 27.4712 0.368415L18.4722 0.500107ZM13.4869 148.5C14.324 147.953 14.324 147.953 14.324 147.953C14.3238 147.953 14.3237 147.953 14.3233 147.952C14.3226 147.951 14.3214 147.949 14.3198 147.947C14.3164 147.941 14.311 147.933 14.3038 147.922C14.2893 147.899 14.2672 147.865 14.2379 147.819C14.1794 147.726 14.092 147.587 13.9792 147.404C13.7537 147.037 13.4266 146.492 13.0251 145.789C12.2217 144.383 11.1212 142.345 9.93891 139.826C7.57163 134.782 4.89009 127.84 3.59762 120.209C2.305 112.577 2.41055 104.309 5.55377 96.5651C8.68841 88.8421 14.8821 81.5446 25.9417 75.8916L25.0315 74.1108C13.591 79.9584 7.03468 87.5986 3.7006 95.813C0.375102 104.006 0.293232 112.676 1.6257 120.543C2.95831 128.411 5.71437 135.532 8.12841 140.675C9.33679 143.25 10.4629 145.336 11.2885 146.781C11.7013 147.504 12.0393 148.067 12.2752 148.451C12.3932 148.643 12.4856 148.79 12.5492 148.89C12.5809 148.94 12.6055 148.979 12.6224 149.005C12.6309 149.018 12.6374 149.028 12.642 149.035C12.6443 149.039 12.6461 149.041 12.6474 149.043C12.648 149.044 12.6486 149.045 12.6489 149.046C12.6494 149.047 12.6498 149.047 13.4869 148.5ZM25.9417 75.8916C37.4159 70.0268 42.8422 62.3221 44.3611 53.9924C45.8682 45.7275 43.4933 37.0319 39.7648 29.1955C36.0293 21.3446 30.8813 14.2432 26.6823 9.11639C24.5802 6.54973 22.7098 4.47062 21.3635 3.03164C20.6902 2.31202 20.1476 1.75211 19.7722 1.37099C19.5845 1.18043 19.4385 1.03453 19.3389 0.935676C19.2891 0.886251 19.2509 0.848586 19.2248 0.822978C19.2117 0.810175 19.2017 0.800385 19.1948 0.793647C19.1914 0.790277 19.1887 0.787671 19.1868 0.785832C19.1858 0.784913 19.185 0.78411 19.1845 0.78365C19.1839 0.78304 19.1835 0.782622 18.4868 1.5C17.7901 2.21738 17.7901 2.21735 17.7903 2.2175C17.7906 2.21781 17.7909 2.21816 17.7916 2.21878C17.7928 2.22002 17.7949 2.22201 17.7977 2.22477C17.8034 2.23029 17.8121 2.23884 17.8239 2.2504C17.8474 2.27351 17.8831 2.30863 17.9303 2.35546C18.0247 2.44912 18.1652 2.58959 18.3474 2.77451C18.7117 3.14437 19.2424 3.69189 19.9031 4.39805C21.2247 5.81064 23.0653 7.85653 25.135 10.3836C29.2798 15.4443 34.3192 22.4055 37.9588 30.0548C41.6052 37.7186 43.7927 45.9607 42.3936 53.6336C41.0062 61.2418 36.0574 68.4751 25.0315 74.1108L25.9417 75.8916Z"
+                  fill="#E38163"
+                />
+              </svg>
+            </div>
+            <div class="flex w-full flex-row justify-between">
+              <img
+                src="./assets/man2.jpeg"
+                class="h-[100px] w-[100px] rounded-3xl object-cover"
+              />
+              <img
+                src="./assets/woman3.jpeg"
+                class="h-[160px] w-[160px] rounded-3xl object-cover"
+              />
+            </div>
+          </div>
+          <h3 class="pt-2 text-[17px] font-medium text-[#1b1f3ba6]">
+            Удобное бронирование специалистов
+          </h3>
+        </div>
+      </div>
+      <div class="flex gap-16">
+        <div class="my-auto flex h-[544px] flex-col gap-6">
+          <img
+            src="./assets/man1.jpeg"
+            alt="Therapist 1"
+            class="h-[100px] w-[100px] rounded-3xl object-cover"
+          />
+          <img
+            src="./assets/woman1.jpeg"
+            alt="Therapist 2"
+            class="h-[160px] w-[160px] rounded-3xl object-cover"
+          />
+          <img
+            src="./assets/woman2.jpeg"
+            class="h-[124px] w-[124px] rounded-3xl object-cover"
+          />
+        </div>
+        <div
+          class="flex h-[544px] w-[584px] items-center rounded-[40px] bg-[#79818c1f] px-7"
+        >
+          <!-- gray square -->
+          <div class="mx-auto flex flex-col px-4">
+            <h3 class="text-blackblue px-2 text-[28px] font-extrabold">
+              Проверенные специалисты, подходящие именно вам
+            </h3>
+            <h3 class="px-2 py-6 text-[17px] text-[#1b1f3ba6]">
+              С чем помогают наши терапевты?
+            </h3>
+            <div class="flex flex-wrap gap-4 px-2 pb-4">
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Тревога</span
+              >
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Депрессия</span
+              >
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Нет энергии</span
+              >
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Вопросы с едой</span
+              >
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Отношения</span
+              >
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Понять себя</span
+              >
+              <span
+                class="rounded-lg bg-[#526ED3] px-3 py-1 text-[13px] font-medium text-white"
+                >Самооценка</span
+              >
+              <span
+                class="rounded-lg bg-[#0000000a] px-3 py-1 text-[13px] font-medium text-gray-700"
+                >еще 50+ запросов</span
+              >
+            </div>
+            <button class="rounded-xl bg-orange-500 px-4 py-4 text-white">
+              Подобрать психолога
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative mx-auto flex h-[640px] w-[1400px] flex-col overflow-hidden pl-[100px]"
+    >
+      <div
+        class="absolute right-0 top-0 h-[180px] w-[180px] rounded-[40px] bg-[#FCC068]"
+      ></div>
+      <div
+        class="absolute bottom-12 left-[680px] h-[360px] w-[360px] rounded-lg bg-[#FEE797]"
+      ></div>
+      <h1 class="text-blackblue mb-6 text-[44px] font-extrabold">
+        Хотите повысить квалификацию в чем либо?
+      </h1>
+      <div class="flex gap-12">
+        <!-- Left Section -->
+        <div class="flex w-[520px] flex-col gap-4 p-5">
+          <p class="text-[19px] font-medium text-[#191c30e6]">
+            Проводим семинары по разным темам:
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Тревога</span
+            >
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Депрессия</span
+            >
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Нет энергии</span
+            >
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Вопросы с едой</span
+            >
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Отношения</span
+            >
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Понять себя</span
+            >
+            <span
+              class="rounded-lg bg-[#526ed3] px-3 py-2 text-[13px] text-white"
+              >Самооценка</span
+            >
+            <span
+              class="rounded-lg bg-[#0000000a] px-3 py-2 text-[13px] text-gray-700"
+              >еще 50+ семинаров</span
+            >
+          </div>
+          <button
+            class="w-full rounded-xl bg-orange-500 px-4 py-4 text-[15px] font-extrabold text-white"
+          >
+            Посмотреть актуальные семинары
+          </button>
+        </div>
+        <div class="relative mx-auto">
+          <div class="px-6 py-2">
+            <img
+              src="./assets/meeting.jpeg"
+              alt="Seminar Video"
+              class="h-[360px] w-[524px] rounded-3xl object-cover brightness-[80%]"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="64" height="64" rx="20" fill="#FF7043" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.5347 15.5373C20.0698 15.2452 20.7217 15.2685 21.2346 15.5982L44.5679 30.5982C45.045 30.9049 45.3333 31.4331 45.3333 32.0002C45.3333 32.5673 45.045 33.0955 44.5679 33.4021L21.2346 48.4021C20.7217 48.7318 20.0698 48.7552 19.5347 48.463C18.9996 48.1709 18.6667 47.6098 18.6667 47.0002V17.0002C18.6667 16.3905 18.9996 15.8295 19.5347 15.5373ZM22 20.0529V43.9474L40.5846 32.0002L22 20.0529Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-8 left-16 w-[360px] px-2 text-2xl font-extrabold text-white"
+            >
+              Смотреть видео с последнего семинара
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mx-auto mt-10 flex h-[968px] w-[1408px] flex-row gap-16 rounded-[40px] bg-[#fee797] p-24"
+    >
+      <img
+        src="./assets/woman-at-table.jpeg"
+        class="h-[760px] w-[524px] rounded-3xl object-cover"
+        alt="Man"
+      />
+      <div class="flex flex-col gap-10">
+        <h2 class="pl-5 text-right text-[44px] font-extrabold text-[#191c30e6]">
+          Подборка курсов для будущих психологов
+        </h2>
+        <div class="flex flex-wrap gap-6">
+          <div
+            class="group flex h-[297px] w-[297px] flex-col justify-between gap-1 rounded-3xl bg-[#d2e9a2] p-6 duration-700 hover:shadow-xl hover:ease-out"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4 6C4 4.89543 4.89543 4 6 4H20C21.1046 4 22 4.89543 22 6V20C22 21.1046 21.1046 22 20 22H6C4.89543 22 4 21.1046 4 20V6ZM8 8V18H18V8H8ZM26 6C26 4.89543 26.8954 4 28 4H42C43.1046 4 44 4.89543 44 6V20C44 21.1046 43.1046 22 42 22H28C26.8954 22 26 21.1046 26 20V6ZM30 8V18H40V8H30ZM4 28C4 26.8954 4.89543 26 6 26H20C21.1046 26 22 26.8954 22 28V42C22 43.1046 21.1046 44 20 44H6C4.89543 44 4 43.1046 4 42V28ZM8 30V40H18V30H8ZM26 28C26 26.8954 26.8954 26 28 26H42C43.1046 26 44 26.8954 44 28V42C44 43.1046 43.1046 44 42 44H28C26.8954 44 26 43.1046 26 42V28ZM30 30V40H40V30H30Z"
+                fill="#FF7043"
+              />
+            </svg>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-2xl font-extrabold text-[#191c30e6]">
+                Геймификация
+              </h5>
+              <h6
+                class="hidden text-[15px] font-medium text-[#1b1f3b66] transition ease-out group-hover:block"
+              >
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </h6>
+            </div>
+          </div>
+          <div
+            class="group flex h-[297px] w-[297px] flex-col justify-between rounded-3xl bg-[#d2e9a2] p-6 duration-300 hover:shadow-xl"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 2C24.7612 2 25.4565 2.43214 25.7934 3.11475L31.5085 14.6929L44.2893 16.561C45.0424 16.6711 45.6677 17.1991 45.9025 17.9231C46.1372 18.6472 45.9407 19.4417 45.3955 19.9727L36.149 28.9787L38.3312 41.7019C38.4599 42.4523 38.1514 43.2107 37.5355 43.6581C36.9195 44.1056 36.1029 44.1645 35.4291 43.8101L24 37.7997L12.5709 43.8101C11.8971 44.1645 11.0805 44.1056 10.4645 43.6581C9.84857 43.2107 9.54008 42.4523 9.66878 41.7019L11.851 28.9787L2.60453 19.9727C2.0593 19.4417 1.86275 18.6472 2.09751 17.9231C2.33226 17.1991 2.95762 16.6711 3.71074 16.561L16.4915 14.6929L22.2066 3.11475C22.5435 2.43214 23.2388 2 24 2ZM24 8.51851L19.6134 17.4052C19.3223 17.9949 18.76 18.4039 18.1093 18.499L8.29682 19.9332L15.3955 26.8473C15.8672 27.3068 16.0825 27.969 15.9712 28.6181L14.2964 38.3834L23.0691 33.7699C23.6519 33.4634 24.3481 33.4634 24.9309 33.7699L33.7036 38.3833L32.0288 28.6181C31.9175 27.969 32.1328 27.3068 32.6045 26.8473L39.7032 19.9332L29.8907 18.499C29.24 18.4039 28.6777 17.9949 28.3866 17.4052L24 8.51851Z"
+                fill="#FF7043"
+              />
+            </svg>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-2xl font-extrabold text-[#191c30e6]">
+                Только профи своего дела
+              </h5>
+              <h6
+                class="hidden text-[15px] font-medium text-[#1b1f3b66] group-hover:block"
+              >
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </h6>
+            </div>
+          </div>
+          <div
+            class="group flex h-[297px] w-[297px] flex-col justify-between rounded-3xl bg-[#d2e9a2] p-6 duration-300 hover:shadow-xl"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 8C5.79086 8 4 9.79086 4 12V28C4 30.2091 5.79086 32 8 32H12V24C12 19.5817 15.5817 16 20 16H28V12C28 9.79086 26.2091 8 24 8H8ZM32 16V12C32 7.58172 28.4183 4 24 4H8C3.58172 4 0 7.58172 0 12V28C0 32.4183 3.58172 36 8 36H12V40C12 44.4183 15.5817 48 20 48H36C40.4183 48 44 44.4183 44 40V24C44 19.5817 40.4183 16 36 16H32ZM28 20H26.1862L28 22.0406V20ZM21.3695 20H20C19.562 20 19.1405 20.0704 18.7461 20.2005L27.7995 29.2539C27.9296 28.8595 28 28.438 28 28V27.4593L21.3695 20ZM16.2005 22.7461C16.0704 23.1405 16 23.562 16 24V25.4544L22.5456 32H24C24.438 32 24.8595 31.9296 25.2539 31.7995L16.2005 22.7461ZM16 30.5456V32H17.4544L16 30.5456ZM16 36H24C28.4183 36 32 32.4183 32 28V20H36C38.2091 20 40 21.7909 40 24V40C40 42.2091 38.2091 44 36 44H20C17.7909 44 16 42.2091 16 40V36Z"
+                fill="#FF7043"
+              />
+            </svg>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-2xl font-extrabold text-[#191c30e6]">
+                Удобная платформа
+              </h5>
+              <h6
+                class="hidden text-[15px] font-medium text-[#1b1f3b66] group-hover:block"
+              >
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </h6>
+            </div>
+          </div>
+          <div
+            class="group flex h-[297px] w-[297px] flex-col justify-between rounded-3xl bg-[#d2e9a2] p-6 duration-300 hover:shadow-xl"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.75736 9.75736C2.88258 8.63214 4.4087 8 6 8H28C29.5913 8 31.1174 8.63214 32.2426 9.75736C33.3679 10.8826 34 12.4087 34 14V20.1136L44.8375 12.3725C45.4472 11.9371 46.249 11.8789 46.9152 12.2217C47.5813 12.5645 48 13.2508 48 14V34C48 34.7492 47.5813 35.4355 46.9152 35.7783C46.249 36.1211 45.4472 36.0629 44.8375 35.6275L34 27.8864V34C34 35.5913 33.3679 37.1174 32.2426 38.2426C31.1174 39.3679 29.5913 40 28 40H6C4.4087 40 2.88258 39.3679 1.75736 38.2426C0.632141 37.1174 0 35.5913 0 34V14C0 12.4087 0.632141 10.8826 1.75736 9.75736ZM30 14C30 13.4696 29.7893 12.9609 29.4142 12.5858C29.0391 12.2107 28.5304 12 28 12H6C5.46957 12 4.96086 12.2107 4.58579 12.5858C4.21071 12.9609 4 13.4696 4 14V34C4 34.5304 4.21071 35.0391 4.58579 35.4142C4.96086 35.7893 5.46957 36 6 36H28C28.5304 36 29.0391 35.7893 29.4142 35.4142C29.7893 35.0391 30 34.5304 30 34V14ZM35.4409 24L44 30.1136V17.8864L35.4409 24Z"
+                fill="#FF7043"
+              />
+            </svg>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-2xl font-extrabold text-[#191c30e6]">
+                В формате онлайн
+              </h5>
+              <h6
+                class="hidden text-[15px] font-medium text-[#1b1f3b66] group-hover:block"
+              >
+                Групповые занятия, кружок для какой-н. специальной подготовки,
+                для повышения квалификации.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto mt-24 flex w-[1200px] flex-col gap-6 text-center">
+      <h1 class="text-[50px] font-extrabold text-[#191c30e6]">
+        Частые вопросы
+      </h1>
+      <div class="h-[480px] w-full rounded-3xl bg-[#f6f6f6]"></div>
+    </div>
+    <div class="mx-auto mt-24 flex w-[1200px] flex-col gap-10">
+      <h1 class="text-center text-[50px] font-extrabold text-[#191c30e6]">
+        Контакты
+      </h1>
+      <div class="flex flex-row gap-12">
+        <div class="h-[510px] w-[825px] rounded-[32px] bg-black"></div>
+        <div
+          class="flex h-[510px] w-[335px] flex-col gap-6 rounded-3xl bg-[#f6f6f6] p-6"
+        >
+          <h6 class="text-[20px] font-extrabold text-[#191c30e6]">Наш офис</h6>
+          <div class="flex flex-row items-start">
+            <img src="https://placehold.co/40x40" />
+
+            <h3 class="px-6 pr-10 text-[15px] font-medium text-[#1b1f3ba6]">
+              Астана, район Есиль, улица Сыганак, дом 17М, БЦ Green Tower,
+              почтовый индекс 010000
+            </h3>
+          </div>
+          <div class="flex flex-row">
+            <img src="https://placehold.co/40x40" />
+            <h3
+              class="px-6 pr-10 text-[15px] font-medium leading-6 text-[#1b1f3ba6]"
+            >
+              +7 777 199 2992 по будням с 10 - 20:00
+            </h3>
+          </div>
+          <div class="flex flex-row">
+            <img src="https://placehold.co/40x40" />
+            <h3 class="px-6 text-[15px] font-medium text-[#1b1f3ba6]">
+              psycho@mail.kz
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
